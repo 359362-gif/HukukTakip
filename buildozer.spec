@@ -10,6 +10,7 @@ android.permissions = INTERNET
 orientation = portrait
 android.api = 30
 android.ndk = 23b
+android.build_tools = 30.0.3
 
 [buildozer]
 log_level = 2
