@@ -1,0 +1,17 @@
+[build-system]
+requires = ["briefcase"]
+
+[tool.briefcase]
+project_name = "HukukTakip"
+bundle = "org.hukuk"
+version = "0.1"
+url = "https://example.com/hukuktakip"
+license = {file = "LICENSE"}
+author = "Sizin Adınız"
+author_email = "sizin@email.com"
+
+[tool.briefcase.app.hukuktakip]
+formal_name = "Hukuk Takip"
+description = "Hukuk Takip Uygulaması"
+sources = ["main.py"]
+requires = ["kivy>=2.2.1"]
