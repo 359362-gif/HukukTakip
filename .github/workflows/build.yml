@@ -31,6 +31,8 @@ jobs:
         echo "24333f8a63b6825ea9c551df7318f4c5ec0e11c" > "$ANDROID_SDK_ROOT/licenses/android-sdk-license"
         echo "84831b9409646a918e2411f9a982d5b93934f64" > "$ANDROID_SDK_ROOT/licenses/android-sdk-preview-license"
         echo "d56f5187479451eabf01fb78af6dfcb131a6481e" > "$ANDROID_SDK_ROOT/licenses/android-sdk-license"
+        echo "859f317f9b6fc424e5d410066a9435b4a6e1c9a9" > "$ANDROID_SDK_ROOT/licenses/google-gdk"
+        yes | "$ANDROID_SDK_ROOT/tools/bin/sdkmanager" --licenses || true
     
     - name: Build APK
       run: |
