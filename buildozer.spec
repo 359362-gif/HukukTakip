@@ -8,6 +8,7 @@ version = 1.0
 requirements = python3,kivy==2.2.1
 android.permissions = INTERNET
 orientation = portrait
+android.arch = arm64-v8a
 
 [buildozer]
 log_level = 2
