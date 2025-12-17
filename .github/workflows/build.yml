@@ -37,6 +37,7 @@ jobs:
         echo "84831b9409646a918e2411f9a982d5b93934f64" > "$ANDROID_SDK_ROOT/licenses/android-sdk-preview-license"
         echo "2378330853107998904267822277617942382086" > "$ANDROID_SDK_ROOT/licenses/google-sdk-license"
         echo "84831b9409646a918e2411f9a982d5b93934f64" > "$ANDROID_SDK_ROOT/licenses/android-sdk-preview-license"
+        yes | "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" --licenses || true
     
     - name: Build APK
       run: |
